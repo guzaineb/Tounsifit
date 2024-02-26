@@ -1,0 +1,19 @@
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+
+
+}
+.most-contacted-layout{
+    -fx-background-radius: 0 50 50 ;
+}
+.light-gray-background{
+    -fx-background-color: #b4b0b0;
+}
+.button{
+    -fx-background-color: #ef762c;
+    -fx-background-radius: 50;
+}
+
+.primary-color{
+    -fx-background-color: #a4a4a4;
+}

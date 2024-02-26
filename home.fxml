@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.GlyphsStack?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.Home">
+   <children>
+      <SplitPane dividerPositions="0.3383905013192611, 0.9947229551451187" layoutX="-4.0" layoutY="-1.0" prefHeight="407.0" prefWidth="608.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="62.0" fitWidth="102.0" layoutX="31.0" layoutY="20.0">
+                     <image>
+                        <Image url="@../../../../../Desktop/logo.png" />
+                     </image>
+                  </ImageView>
+                  <GlyphsStack layoutX="115.0" layoutY="155.0" />
+                  <Separator layoutY="91.0" prefWidth="200.0" />
+                  <PointLight color="CHARTREUSE" lightOn="true" />
+                  <ImageView fitHeight="33.0" fitWidth="38.0" layoutX="14.0" layoutY="100.0">
+                     <image>
+                        <Image url="@../../../../../Desktop/allergieIcone.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="63.0" layoutY="104.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Allergie" textFill="#409c6f" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="426.0" />
+            <PointLight color="CHARTREUSE" lightOn="true" />
+        </items>
+      </SplitPane>
+      <GlyphsStack />
+   </children>
+</AnchorPane>

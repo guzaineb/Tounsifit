@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="590.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controles.AffichageAllAdmin">
+   <children>
+      <SplitPane layoutY="-1.0" prefHeight="590.0" prefWidth="718.0" />
+      <SplitPane dividerPositions="0.21628959276018095" layoutX="14.0" layoutY="10.0" prefHeight="806.0" prefWidth="982.0" styleClass="primary-color" stylesheets="@Style.css">
+         <items>
+            <AnchorPane accessibleRole="IMAGE_VIEW" minHeight="0.0" minWidth="0.0" prefHeight="629.0" prefWidth="188.0">
+               <children>
+                  <Separator layoutX="1.0" layoutY="132.0" prefHeight="1.0" prefWidth="264.0" />
+                  <Button fx:id="allergie" layoutX="32.0" layoutY="215.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="126.0" text="Allergie">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@assets/allergieIcone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="Restaurant" layoutX="39.0" layoutY="440.0" mnemonicParsing="false" text="Restaurant">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="38.0">
+                           <image>
+                              <Image url="@assets/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="40.0" layoutY="362.0" mnemonicParsing="false" text="Panier">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="panier" fitHeight="33.0" fitWidth="45.0">
+                           <image>
+                              <Image url="@assets/panier-de-courses.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="produit" layoutX="40.0" layoutY="280.0" mnemonicParsing="false" text="Produit">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="38.0">
+                           <image>
+                              <Image url="@assets/produit-bio.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="103.0" fitWidth="100.0" layoutX="52.0" layoutY="23.0">
+                     <image>
+                        <Image url="@assets/admin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="643.0" prefWidth="690.0">
+               <children>
+                  <HBox fx:id="AllergiesLayout" layoutY="120.0" prefHeight="684.0" prefWidth="766.0">
+                     <children>
+                        <ScrollPane fx:id="alllayaout" prefHeight="648.0" prefWidth="763.0" styleClass="transparent" stylesheets="@Style.css">
+                           <content>
+                              <VBox fx:id="vbox" prefHeight="577.0" prefWidth="750.0">
+                                 <children>
+                                    <HBox fx:id="NomB" prefHeight="100.0" prefWidth="200.0" styleClass="light-gray-background" stylesheets="@Style.css">
+                                       <children>
+                                          <Label prefHeight="106.0" prefWidth="143.0" text="Nom">
+                                             <font>
+                                                <Font name="Bell MT Bold" size="38.0" />
+                                             </font>
+                                          </Label>
+                                          <HBox prefHeight="100.0" prefWidth="344.0">
+                                             <children>
+                                                <Label fx:id="DesB" prefHeight="100.0" prefWidth="233.0" text="Description">
+                                                   <font>
+                                                      <Font name="Bell MT Italic" size="37.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="ActionB" prefHeight="100.0" prefWidth="214.0" text="Actions">
+                                                   <font>
+                                                      <Font name="Bell MT" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <VBox fx:id="AllergieLayout" prefHeight="95.0" prefWidth="750.0">
+                                       <children>
+                                          <HBox fx:id="NomB1" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Label fx:id="all" contentDisplay="CENTER" prefHeight="101.0" prefWidth="110.0" text="Allergie">
+                                                   <font>
+                                                      <Font name="Bell MT Bold" size="17.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="DesB1" prefHeight="96.0" prefWidth="369.0" text=" description ">
+                                                   <font>
+                                                      <Font name="Bell MT Italic" size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox fx:id="hbox3" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="supprimer" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handDelet" prefHeight="47.0" prefWidth="27.0">
+                                                         <graphic>
+                                                            <ImageView fx:id="supprimerImage" fitHeight="35.0" fitWidth="24.0">
+                                                               <image>
+                                                                  <Image url="@assets/bouton-supprimer.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                      <Button fx:id="edit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleEdit" prefHeight="48.0" prefWidth="48.0">
+                                                         <graphic>
+                                                            <ImageView>
+                                                               <image>
+                                                                  <Image url="@assets/modifier-loutil.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#437b30" height="124.0" layoutX="-2.0" layoutY="-3.0" nodeOrientation="LEFT_TO_RIGHT" stroke="WHITE" strokeType="INSIDE" width="766.0" />
+                  <Text fill="#b70c0c" layoutX="214.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Types des allergies ">
+                     <font>
+                        <Font name="Arial Narrow" size="28.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="80.0" fitWidth="147.0" layoutX="605.0" layoutY="19.0">
+                     <image>
+                        <Image url="@assets/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
